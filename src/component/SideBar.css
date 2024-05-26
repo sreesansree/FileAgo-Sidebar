@@ -1,0 +1,73 @@
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    /* background-color: rgb(237, 248, 248); */
+    /* background-color: #f5f5f5; */
+    padding: 20px;
+    /* box-shadow: 20px 0 5px rgba(211, 206, 206, 0.1); */
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 1px solid #faf3f3;
+    border-radius: 15px;
+
+}
+
+.sidebar.blur-background {
+    backdrop-filter: blur(5px);
+    /* Adjust blur radius as needed */
+    background-color: rgba(219, 236, 247, 0.5);
+    /* Adjust background color and opacity as needed */
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #ddd;
+}
+
+.sidebar ul li.active a {
+    color: rgb(0, 166, 255);
+    font-weight: bold;
+}
+
+.sidebar ul li a.hover {
+    text-decoration: underline;
+}

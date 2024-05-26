@@ -1,0 +1,13 @@
+
+@font-face {
+    font-family: "Raleway";
+    src: url('path/to/raleway-font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.raleway-unique {
+    font-family: "Raleway-unique", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Adjust font weight as needed */
+    font-style: italic; /* Adjust font style as needed */
+}
