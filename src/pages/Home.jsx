@@ -7,6 +7,7 @@ export default function Home() {
   const getPageName = (path) => {
     if (!path) return null; // Handle case when path is null or undefined
     const pageName = path.substring(1); // Remove the leading slash
+    console.log(pageName,'pageNameeeex');
     return pageName.charAt(0).toUpperCase() + pageName.slice(1); // Capitalize the first letter
   };
   const previousPage =
